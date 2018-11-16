@@ -1,0 +1,31 @@
+{
+  "name": "xd-template",
+  "version": "0.0.1",
+  "description": "Template project to get you started with XD develompent",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "cross-env NODE_ENV=development webpack --config scripts/webpack.config.js --progress",
+    "watch": "cross-env NODE_ENV=development webpack --config scripts/webpack.config.js --progress --watch"
+  },
+  "keywords": [
+    "XD",
+    "Template"
+  ],
+  "author": "Jonathan Fontanez <fontanezj1@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@adobe/xdpm": "^1.1.2",
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@types/adobexd": "https://github.com/tato123/typings",
+    "babel-loader": "^8.0.4",
+    "copy-webpack-plugin": "^4.6.0",
+    "cross-env": "^5.2.0",
+    "prettier": "^1.15.2",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
